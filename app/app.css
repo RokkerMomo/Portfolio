@@ -5,6 +5,24 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@keyframes popUpBounce {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.pop-up-bounce {
+  animation: popUpBounce 0.8s ease-out;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
