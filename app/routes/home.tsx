@@ -6,6 +6,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
+import { useInView } from 'react-intersection-observer';
+import { FaFile } from "react-icons/fa6";
 
 
 import resume from "./resume.pdf"
@@ -23,6 +25,9 @@ export default function Home() {
   const [state, setState] = useState(0);
   const [fadeIn, setFadeIn] = useState(false);
   const [copied, setCopied] = useState(false);
+  const { ref: myRef, inView: myElementIsVisible } = useInView({ triggerOnce: true });
+  const { ref: myRef2, inView: myElementIsVisible2 } = useInView({ triggerOnce: true });
+  const { ref: myRef3, inView: myElementIsVisible3 } = useInView({ triggerOnce: true });
 
   const copytoclipboard = (text: string) => {
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -125,9 +130,9 @@ export default function Home() {
 
         <h1 className="text-3xl mt-10 text-center">System Architecture & Projects</h1>
 
-        <div style={{
+        <div ref={myRef} style={{
           backgroundColor: "rgba(22, 25, 33, 1)",
-        }} className="size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5">
+        }} className={`size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5 ${myElementIsVisible ? "pop-up-bounce" : ""}`}>
           
           <div className="flex flex-1 flex-col gap-2">
 
@@ -165,6 +170,13 @@ export default function Home() {
               backgroundColor: "rgba(26, 36, 55, 1)",
               borderColor: "rgba(33, 53, 91, 1)"
             }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>Material UI</p>
+            </div>
+
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
               <p>TypeScript</p>
             </div>
 
@@ -188,9 +200,9 @@ export default function Home() {
         </div>
 
 
-        <div style={{
+        <div ref={myRef2} style={{
           backgroundColor: "rgba(22, 25, 33, 1)",
-        }} className="size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5">
+        }} className={`size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5 ${myElementIsVisible2 ? "pop-up-bounce" : ""}`}>
           
           <div className="flex flex-1 flex-col gap-2">
 
@@ -250,9 +262,9 @@ export default function Home() {
         </div>
 
 
-        <div style={{
+        <div ref={myRef3} style={{
           backgroundColor: "rgba(22, 25, 33, 1)",
-        }} className="size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5">
+        }} className={`size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5 ${myElementIsVisible3 ? "pop-up-bounce" : ""}`}>
           
           <div className="flex flex-1 flex-col gap-2">
 
@@ -355,7 +367,7 @@ export default function Home() {
         <div className="flex flex-row gap-5 flex-wrap">
         <a     href={resume}  target="_blank" rel="noopener noreferrer"
         download className=" bg-green-950 hover:bg-green-800 transform transition-transform duration-300 hover:scale-105 text-center rounded-md border border-green-800 p-3 mb-2">
-          <p className="text-green-400">Download Resume</p>
+          <p className="text-green-400 flex flex-row gap-2"><FaFile color="green" size={20} /> Download Resume</p>
         </a>
         
         </div>
