@@ -14,8 +14,8 @@ import resume from "./resume.pdf"
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Personal Portfolio" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Fernando Parra" },
+    { name: "description", content: "Personal Portfolio of Fernando Parra" },
   ];
 }
 
