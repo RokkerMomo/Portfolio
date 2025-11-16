@@ -5,6 +5,8 @@ import square from "./square.jpg"
 import { CiLocationOn } from "react-icons/ci";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
+
 
 import resume from "./resume.pdf"
 
@@ -204,6 +206,10 @@ export default function Home() {
 
         <p className="flex flex-1 flex-row gap-1"><CiLocationOn color="green" size={20} /> Maracaibo, Venezuela</p>
 
+        <p className="text-green-400">$ contact --Phone</p>
+
+        <p className="flex flex-1 flex-row gap-1"><FaPhone color="green" size={20} />+58 412-7649474</p>
+
         <p className="text-green-400">$ contact --email</p>
 
         <div className="flex flex-row gap-5 flex-wrap">
@@ -233,7 +239,7 @@ export default function Home() {
 
         <div className="flex flex-row gap-5 flex-wrap">
 
-          <div
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/RokkerMomo"
            className="bg-[#161F24] hover:bg-[#232B32] flex min-w-60 h-20 justify-center items-center flex-row border border-gray-700 rounded-lg p-2 gap-2
           hover:scale-105 transform transition-transform duration-300">
             <div style={{
@@ -244,9 +250,9 @@ export default function Home() {
             <p className="text-gray-400">@RokkerMomo</p>
           </div>
 
-          </div>
+          </a>
 
-          <div
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/fertropical/"
            className="bg-[#161F24] hover:bg-[#232B32] flex min-w-60 h-20 justify-center items-center flex-row border border-gray-700 rounded-lg p-2 gap-2
           hover:scale-105 transform transition-transform duration-300">
             <div style={{
@@ -257,20 +263,13 @@ export default function Home() {
             <p className="text-gray-400">Fernando Parra</p>
           </div>
 
-          </div>
+          </a>
 
-        
-        
-        
         </div>
         
-        
-
             </div>
 
       </div>
-
-      
 
     </body>
   );
