@@ -57,7 +57,7 @@ export default function Home() {
   }, []);
 
   return (
-    <body className="flex flex-1 flex-col items-center justify-center pb-5 gap-5">
+    <body className="bg-gray-950 text-white flex flex-1 flex-col items-center justify-center pb-5 gap-5">
 
 
       {/* $whoami */}
