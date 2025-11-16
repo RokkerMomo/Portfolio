@@ -188,6 +188,131 @@ export default function Home() {
         </div>
 
 
+        <div style={{
+          backgroundColor: "rgba(22, 25, 33, 1)",
+        }} className="size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5">
+          
+          <div className="flex flex-1 flex-col gap-2">
+
+            <h1 className="font-mono font-bold text-3xl" >
+            Web Platform (Class Subscription & Streaming)
+            </h1>
+
+            <p className="text-md text-gray-400">
+            Development of a subscription-based web application using Next.js that allows users to register, subscribe to classes, and stream video lessons directly from the platform. </p>
+          </div>
+
+
+          <div>
+            <h1 className="font-mono font-bold text-2xl">Key Achievements:</h1>
+            <ul>
+              <li className="text-gray-400">• Built a responsive web application enabling class subscriptions and video streaming with Next.js..</li>
+              <li className="text-gray-400">• Integrated TypeScript and MongoDB for type safety and efficient data management.</li>
+              <li className="text-gray-400">• Implemented secure user authentication and subscription workflows.</li>
+              <li className="text-gray-400">• Connected the platform with the Vimeo Developer API to deliver high-quality video content.</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-1 flex-col gap-2 ">
+          <div className="flex flex-row gap-2 flex-wrap">
+            
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>Next.js</p>
+            </div>
+
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>TypeScript</p>
+            </div>
+
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>MongoDB</p>
+            </div>
+
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>Vimeo Developer API</p>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+
+
+        <div style={{
+          backgroundColor: "rgba(22, 25, 33, 1)",
+        }} className="size-[calc(100vw-50px)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5">
+          
+          <div className="flex flex-1 flex-col gap-2">
+
+            <h1 className="font-mono font-bold text-3xl" >
+            Mobile App (Instagram)
+            </h1>
+
+            <p className="text-md text-gray-400">
+            Development of an Instagram-style mobile app using React Native for the interface and a robust backend with TypeScript and MongoDB.
+            </p>
+
+          </div>
+
+
+          <div>
+            <h1 className="font-mono font-bold text-2xl">Key Achievements:</h1>
+            <ul>
+              <li className="text-gray-400">• Developed a mobile application with features similar to Instagram using React Native.</li>
+              <li className="text-gray-400">• Implemented a scalable backend using TypeScript and MongoDB for efficient data management.</li>
+              <li className="text-gray-400">• Ensured a seamless user experience with responsive design and smooth navigation.</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-1 flex-col gap-2 ">
+          <div className="flex flex-row gap-2 flex-wrap">
+            
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>React Native</p>
+            </div>
+
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>TypeScript</p>
+            </div>
+
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>MongoDB</p>
+            </div>
+
+            <div style={{
+              backgroundColor: "rgba(26, 36, 55, 1)",
+              borderColor: "rgba(33, 53, 91, 1)"
+            }} className="bg-green-950 text-center rounded-md border p-2 mb-2">
+              <p>Socket.IO</p>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+
+
             <div className="min-w-[calc(100vw-50vw)] border border-gray-700 rounded-lg p-5 mt-10 mb-5 flex flex-1 flex-col gap-5" style={{
               backgroundColor: "rgba(14, 21, 18, 1)",
             }}>
